@@ -1,0 +1,26 @@
+{
+  "name": "plugman_ui",
+  "version": "1.0",
+  "description": {
+    "en": "Plugman UI",
+    "ru": "Plugman UI",
+    "uk": "Plugman UI"
+  },
+  "url": "https://github.com/pytsite/plugin-plugman_ui",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": [
+      "assetman",
+      "auth",
+      "http_api",
+      "permissions",
+      "settings",
+      "widget"
+    ]
+  }
+}
