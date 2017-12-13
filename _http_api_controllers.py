@@ -16,6 +16,7 @@ class PostInstall(_routing.Controller):
         plugin_name = self.arg('name')
 
         _plugman.install(plugin_name)
+        _reload.reload()
 
         return _plugman.plugin_info(plugin_name)
 

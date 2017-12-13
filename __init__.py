@@ -6,14 +6,14 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def _init():
+def plugin_load():
     from pytsite import plugman
     from plugins import assetman, permissions, settings, http_api
     from . import _settings_form, _http_api_controllers
 
     assetman.register_package(__name__)
-    assetman.t_less(__name__ + '@**')
-    assetman.t_js(__name__ + '@**')
+    assetman.t_less(__name__)
+    assetman.t_js(__name__)
 
     # HTTP API
     http_api.handle('POST', 'plugman/install/<name>', _http_api_controllers.PostInstall,
@@ -29,6 +29,3 @@ def _init():
 
         # Settings
         settings.define('plugman', _settings_form.Form, 'plugman_ui@plugins', 'fa fa-plug', 'plugman_ui@manage')
-
-
-_init()
