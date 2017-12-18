@@ -7,13 +7,17 @@ __license__ = 'MIT'
 
 
 def plugin_load():
-    from pytsite import plugman
-    from plugins import assetman, permissions, settings, http_api
-    from . import _settings_form, _http_api_controllers
+    from plugins import assetman
 
     assetman.register_package(__name__)
     assetman.t_less(__name__)
     assetman.t_js(__name__)
+
+
+def plugin_load_uwsgi():
+    from pytsite import plugman
+    from plugins import permissions, settings, http_api
+    from . import _settings_form, _http_api_controllers
 
     # HTTP API
     http_api.handle('POST', 'plugman/install/<name>', _http_api_controllers.PostInstall,

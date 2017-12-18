@@ -50,7 +50,7 @@ class Form(_settings.Form):
             actions = ''
 
             try:
-                l_plugin_info = _plugman.plugin_info(r_plugin_name)
+                l_plugin_info = _plugman.plugin_package_info(r_plugin_name)
 
                 version_str = l_plugin_info['version']
 
@@ -72,7 +72,7 @@ class Form(_settings.Form):
                     btn.append(_html.Span(_lang.t('plugman_ui@uninstall'), css='text'))
                     actions += str(btn)
 
-            except _plugman.error.PluginNotFound:
+            except _plugman.error.PluginPackageNotFound:
                 version_str = r_plugin_info['version']
 
                 # Install button

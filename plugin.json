@@ -1,6 +1,6 @@
 {
   "name": "plugman_ui",
-  "version": "1.2",
+  "version": "1.3",
   "description": {
     "en": "Plugman UI",
     "ru": "Plugman UI",
@@ -17,6 +17,7 @@
     "plugins": [
       "assetman",
       "auth",
+      "font_awesome",
       "http_api",
       "permissions",
       "settings",
