@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.3.2 (2017-12-20)
+
+Missing translations added.
+
+
 ### 1.3.1 (2017-12-20)
 
 Init code refactored.

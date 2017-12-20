@@ -7,7 +7,10 @@ __license__ = 'MIT'
 
 
 def plugin_load():
+    from pytsite import lang
     from plugins import assetman
+
+    lang.register_package(__name__)
 
     assetman.register_package(__name__)
     assetman.t_less(__name__)
