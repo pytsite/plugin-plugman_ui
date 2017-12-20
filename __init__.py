@@ -33,3 +33,11 @@ def plugin_load_uwsgi():
 
         # Settings
         settings.define('plugman', _settings_form.Form, 'plugman_ui@plugins', 'fa fa-plug', 'plugman_ui@manage')
+
+
+def plugin_install():
+    from plugins import assetman
+
+    plugin_load()
+    assetman.build(__name__)
+    assetman.build_translations()
