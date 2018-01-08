@@ -50,7 +50,7 @@ class Form(_settings.Form):
             actions = ''
 
             try:
-                l_plugin_info = _plugman.plugin_package_info(r_plugin_name)
+                l_plugin_info = _plugman.local_plugin_info(r_plugin_name)
 
                 version_str = l_plugin_info['version']
 

@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.3.4 (2018-01-08)
+
+Update to support latest `plugman`'s API
+
+
 ### 1.3.3 (2017-12-21)
 
 Init code refactored.

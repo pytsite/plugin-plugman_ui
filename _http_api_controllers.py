@@ -18,7 +18,7 @@ class PostInstall(_routing.Controller):
         _plugman.install(plugin_name)
         _reload.reload()
 
-        return _plugman.plugin_package_info(plugin_name)
+        return _plugman.local_plugin_info(plugin_name)
 
 
 class PostUninstall(_routing.Controller):
