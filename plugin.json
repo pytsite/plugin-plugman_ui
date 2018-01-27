@@ -16,7 +16,7 @@
     "packages": [],
     "plugins": [
       "assetman",
-      "auth>=1.3",
+      "auth>=1.8",
       "font_awesome",
       "http_api",
       "settings>=1.3",

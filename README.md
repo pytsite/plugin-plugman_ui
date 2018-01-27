@@ -6,7 +6,7 @@
 
 ### 1.4 (2018-01-27)
 
-Support for `auth-1.3`, `settings-1.3`.
+Support for `auth-1.8`, `settings-1.3`.
 
 
 ### 1.3.4 (2018-01-08)
