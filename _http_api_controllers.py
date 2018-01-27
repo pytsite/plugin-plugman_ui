@@ -1,11 +1,11 @@
 """PytSite Plugman HTTP API.
 """
-from pytsite import plugman as _plugman, routing as _routing, reload as _reload
-from plugins import auth as _auth
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import plugman as _plugman, routing as _routing, reload as _reload
+from plugins import auth as _auth
 
 
 class PostInstall(_routing.Controller):
@@ -18,7 +18,7 @@ class PostInstall(_routing.Controller):
         _plugman.install(plugin_name)
         _reload.reload()
 
-        return _plugman.local_plugin_info(plugin_name)
+        return _plugman.local_plugin_info(plugin_name, False)
 
 
 class PostUninstall(_routing.Controller):

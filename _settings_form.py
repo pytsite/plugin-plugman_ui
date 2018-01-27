@@ -1,12 +1,11 @@
 """PytSite Plugin Manager Settings Form.
 """
-from pytsite import lang as _lang, html as _html, router as _router, semver as _semver, plugman as _plugman
-from plugins import assetman as _assetman, widget as _widget, settings as _settings
-
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import lang as _lang, html as _html, router as _router, semver as _semver, plugman as _plugman
+from plugins import assetman as _assetman, widget as _widget, settings as _settings
 
 _DEV_MODE = _router.server_name() == 'local.plugins.pytsite.xyz'
 

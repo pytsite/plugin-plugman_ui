@@ -1,4 +1,3 @@
-plugin_management: 'Manage plugins'
 name: 'Name'
 version: 'Version'
 description: 'Description'
