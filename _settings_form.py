@@ -28,7 +28,7 @@ class Form(_settings.Form):
                 title=_lang.t('plugman_ui@cannot_manage_plugins_in_dev_mode'),
             ))
 
-            self.remove_widget('action-submit')
+            self.remove_widget('action_submit')
 
             return
 

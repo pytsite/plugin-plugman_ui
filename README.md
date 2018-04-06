@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.5 (2018-04-07)
+
+Support of `form-2.3`.
+
+
 ### 1.4 (2018-01-27)
 
 Support for `auth-1.8`, `settings-1.3`.
