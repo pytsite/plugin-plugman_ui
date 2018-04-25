@@ -11,10 +11,10 @@ _DEV_MODE = _router.server_name() == 'local.plugins.pytsite.xyz'
 
 
 class Form(_settings.Form):
-    def _on_setup_form(self, **kwargs):
+    def _on_setup_form(self):
         """Hook.
         """
-        super()._on_setup_form(**kwargs)
+        super()._on_setup_form()
 
         _assetman.preload('plugman_ui@css/settings-form.css')
         _assetman.preload('plugman_ui@js/settings-form.js')
