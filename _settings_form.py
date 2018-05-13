@@ -5,7 +5,7 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 from pytsite import lang as _lang, html as _html, router as _router, semver as _semver, plugman as _plugman
-from plugins import assetman as _assetman, widget as _widget, settings as _settings
+from plugins import widget as _widget, settings as _settings
 
 _DEV_MODE = _router.server_name() == 'local.plugins.pytsite.xyz'
 
@@ -16,8 +16,10 @@ class Form(_settings.Form):
         """
         super()._on_setup_form()
 
-        _assetman.preload('plugman_ui@css/settings-form.css')
-        _assetman.preload('plugman_ui@js/settings-form.js')
+        self.assets.extend([
+            'plugman_ui@css/settings-form.css',
+            'plugman_ui@js/settings-form.js',
+        ])
 
     def _on_setup_widgets(self):
         """Hook.
