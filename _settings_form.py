@@ -59,7 +59,7 @@ class Form(_settings.Form):
                     version_str += ' ({})'.format(r_plugin_info['version'])
 
                     # Upgrade button
-                    btn = _html.A(css='btn btn-xs btn-default action-btn', child_sep='&nbsp;',
+                    btn = _html.A(css='btn btn-sm btn-default btn-light action-btn', child_sep='&nbsp;',
                                   href='#', data_name=r_plugin_name, data_ep='plugman/upgrade')
                     btn.append(_html.I(css='fa fa-arrow-up'))
                     btn.append(_html.Span(_lang.t('plugman_ui@upgrade'), css='text'))
@@ -67,7 +67,7 @@ class Form(_settings.Form):
 
                 # Uninstall button
                 if not _plugman.get_dependant_plugins(r_plugin_name):
-                    btn = _html.A(css='btn btn-xs btn-default action-btn', child_sep='&nbsp;',
+                    btn = _html.A(css='btn btn-sm btn-default btn-light action-btn', child_sep='&nbsp;',
                                   href='#', data_name=r_plugin_name, data_ep='plugman/uninstall')
                     btn.append(_html.I(css='fa fa-trash'))
                     btn.append(_html.Span(_lang.t('plugman_ui@uninstall'), css='text'))
@@ -77,7 +77,7 @@ class Form(_settings.Form):
                 version_str = r_plugin_info['version']
 
                 # Install button
-                btn = _html.A(css='btn btn-xs btn-default action-btn', child_sep='&nbsp;',
+                btn = _html.A(css='btn btn-sm btn-default btn-light action-btn', child_sep='&nbsp;',
                               href='#', data_name=r_plugin_name, data_ep='plugman/install')
                 btn.append(_html.I(css='fa fa-download'))
                 btn.append(_html.Span(_lang.t('plugman_ui@install'), css='text'))
