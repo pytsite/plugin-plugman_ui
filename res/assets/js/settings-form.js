@@ -1,5 +1,5 @@
 require(['jquery', 'http-api', 'lang'], function ($, httpApi, lang) {
-    $('.pytsite-form.setting-uid-plugman').on('formForward', function (e, form) {
+    $('.pytsite-form.setting-uid-plugman').on('forward:form:pytsite', function (e, form) {
         var actionBtn = form.em.find('.action-btn');
 
         actionBtn.click(function (e) {
