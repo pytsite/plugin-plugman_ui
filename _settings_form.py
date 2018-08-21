@@ -27,7 +27,7 @@ class Form(_settings.Form):
         if _DEV_MODE:
             self.add_widget(_widget.static.Text(
                 uid='dev_mode_notify',
-                title=_lang.t('plugman_ui@cannot_manage_plugins_in_dev_mode'),
+                text=_lang.t('plugman_ui@cannot_manage_plugins_in_dev_mode'),
             ))
 
             self.remove_widget('action_submit')
